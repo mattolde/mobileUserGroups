@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('mobileUserGroupsApp.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
@@ -36,7 +36,6 @@ angular.module('starter.controllers', [])
 .controller('PeopleCtrl', function($scope) {
 
   // load people from server
-
   $scope.people = [
     { firstName: 'Reggae', id: 1 },
     { firstName: 'Chill', id: 2 },
@@ -45,6 +44,7 @@ angular.module('starter.controllers', [])
     { firstName: 'Rap', id: 5 },
     { firstName: 'Cowbell', id: 6 }
   ];
+
 })
 
 .controller('PersonCtrl', function($scope, $stateParams) {

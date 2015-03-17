@@ -17,11 +17,12 @@ module.exports = function(config) {
     files: [
       'lib/angular/angular.js',
       'lib/angular-ui-router/release/angular-ui-router.js',
-      'lib/angular-*/*.js',
       'lib/ionic/js/ionic.js',
       'lib/ionic/js/ionic-angular.js',
-      'js/*.js',
+      'lib/angular-animate/angular-animate.js',
+      'lib/angular-sanitize/angular-sanitize.js',
       'lib/angular-mocks/angular-mocks.js',
+      'js/*.js',
       'spec/*Spec.js'
     ],
 
