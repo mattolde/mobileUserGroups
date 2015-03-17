@@ -3,11 +3,11 @@
 
   describe('PeopleCtrl', function(){
     // mock Application to allow us to inject our own dependencies
-    beforeEach(angular.mock.module('mobileUserGroupsApp'));
+    beforeEach(module('mobileUserGroupsApp.controllers'));
 
     var $controller;
 
-    beforeEach(angular.mock.inject(function(_$controller_){
+    beforeEach(inject(function(_$controller_){
       // The injector unwraps the underscores (_) from around the parameter names when matching
       $controller = _$controller_;
     }));
