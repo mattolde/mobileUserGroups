@@ -33,16 +33,19 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('PeopleCtrl', function($scope) {
+
+  // load people from server
+
+  $scope.people = [
+    { firstName: 'Reggae', id: 1 },
+    { firstName: 'Chill', id: 2 },
+    { firstName: 'Dubstep', id: 3 },
+    { firstName: 'Indie', id: 4 },
+    { firstName: 'Rap', id: 5 },
+    { firstName: 'Cowbell', id: 6 }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('PersonCtrl', function($scope, $stateParams) {
 });
